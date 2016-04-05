@@ -1,0 +1,23 @@
+{
+  "name": "scss-boilerplate",
+  "version": "1.0.0",
+  "description": "A scss boilerplate built using the 7-1 pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sturdynut/scss-boilerplate.git"
+  },
+  "keywords": [
+    "scss",
+    "architecture"
+  ],
+  "author": "Matti Salokangas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sturdynut/scss-boilerplate/issues"
+  },
+  "homepage": "https://github.com/sturdynut/scss-boilerplate#readme"
+}
