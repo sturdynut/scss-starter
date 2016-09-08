@@ -1,10 +1,12 @@
 {
   "name": "scss-boilerplate",
   "version": "1.0.0",
-  "description": "A scss boilerplate built using the 7-1 pattern",
+  "description": "A sass boilerplate based on the 7-1 pattern with some mods.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "build": "scss-lint ./ && sass --style expanded ./scss/main.scss:./compiled/main.css",
+    "watch": "scss-lint ./ && sass --watch --style expanded  ./scss/main.scss:./compiled/main.css"
   },
   "repository": {
     "type": "git",
@@ -12,6 +14,7 @@
   },
   "keywords": [
     "scss",
+    "css",
     "architecture"
   ],
   "author": "Matti Salokangas",
