@@ -1,0 +1,17 @@
+@import '../1_config/index';
+h1, h2, h3, h4, h5 {
+  font-family: $header-font;
+  font-size: $default-font-size;
+}
+
+h1 {
+  font-size: $default-font-size * 4;
+}
+
+h2 {
+  font-size: $default-font-size * 3;
+}
+
+h3 {
+  font-size: $default-font-size * 2;
+}

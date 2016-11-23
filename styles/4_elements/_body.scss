@@ -1,0 +1,9 @@
+@import '../1_config/index';
+
+body {
+  font-family: $body-font;
+  font-size: $default-font-size;
+  font-weight: $default-font-weight;
+  line-height: $default-line-height;
+  padding: $default-gutters;
+}

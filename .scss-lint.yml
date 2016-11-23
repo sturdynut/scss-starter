@@ -1,5 +1,5 @@
 # Default application configuration that all configurations inherit from.
-
+exclude: [node_modules/**, dist/**]
 scss_files: "**/*.scss"
 plugin_directories: ['.scss-linters']
 

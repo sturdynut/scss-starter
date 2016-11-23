@@ -1,16 +1,17 @@
 {
-  "name": "scss-boilerplate",
+  "name": "thoughtful-css",
   "version": "1.0.0",
-  "description": "A sass boilerplate based on the 7-1 pattern with some mods.",
+  "description": "A thoughtful approach to CSS.",
   "main": "index.js",
   "scripts": {
     "test": "npm run test",
-    "build": "scss-lint ./ && sass --style expanded ./scss/main.scss:./compiled/main.css",
-    "watch": "scss-lint ./ && sass --watch --style expanded  ./scss/main.scss:./compiled/main.css"
+    "serve": "parallelshell \"npm run watch\" \"http-server . -p 7000\" \"open http://localhost:7000\"",
+    "build": "sass --style expanded ./styles/main.scss:./dist/main.css",
+    "watch": "sass --watch --style expanded  ./styles/main.scss:./dist/main.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sturdynut/scss-boilerplate.git"
+    "url": "git+https://github.com/sturdynut/thoughtful-css.git"
   },
   "keywords": [
     "scss",
@@ -20,7 +21,11 @@
   "author": "Matti Salokangas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sturdynut/scss-boilerplate/issues"
+    "url": "https://github.com/sturdynut/thoughtful-css/issues"
   },
-  "homepage": "https://github.com/sturdynut/scss-boilerplate#readme"
+  "homepage": "https://github.com/sturdynut/thoughtful-css#readme",
+  "devDependencies": {
+    "parallelshell": "^2.0.0",
+    "sass-lint": "^1.10.2"
+  }
 }
