@@ -35,3 +35,7 @@ node_modules
 .sass-cache
 
 dist
+
+# IDE
+
+.vscode
