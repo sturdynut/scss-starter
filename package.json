@@ -8,7 +8,8 @@
     "serve": "parallelshell \"http-server . -p 7000\" \"open http://localhost:7000\"",
     "serve:watch": "parallelshell \"npm run watch\" \"http-server . -p 7000\" \"open http://localhost:7000\"",
     "build": "sass --style expanded ./styles/main.scss:./dist/main.css",
-    "watch": "sass --watch --style expanded  ./styles/main.scss:./dist/main.css"
+    "watch": "sass --watch --style expanded  ./styles/main.scss:./dist/main.css",
+    "lint": "sass-lint -c .sass-lint.yml -v -q"
   },
   "repository": {
     "type": "git",
@@ -24,9 +25,16 @@
   "bugs": {
     "url": "https://github.com/sturdynut/scss-starter/issues"
   },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "homepage": "https://github.com/sturdynut/scss-starter#readme",
   "devDependencies": {
+    "ghooks": "^2.0.0",
     "parallelshell": "^2.0.0",
+    "sass": "^0.5.0",
     "sass-lint": "^1.10.2"
   }
 }

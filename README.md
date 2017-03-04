@@ -8,6 +8,7 @@ A starter for setting up SCSS.
 * `npm run watch` - Same as build, but will watch for changes
 * `npm run serve` - Starts a web server and opens `index.html` to see compiled styles
 * `npm run serve:watch` - Same as `server`, but with a watcher.  *Ideal for development*
+* `npm run lint` - Runs `sass-lint` with configuration found in `.sass-lint.yml`.
 
 ## Inspiration
 

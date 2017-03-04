@@ -1,8 +1,9 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*::before, // sass-lint:disable-line force-pseudo-nesting
+*::after { // sass-lint:disable-line force-pseudo-nesting
   box-sizing: inherit;
 }
