@@ -4,7 +4,6 @@
   "description": "A starter for setting up SCSS.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test",
     "serve": "parallelshell \"http-server . -p 7000\" \"open http://localhost:7000\"",
     "serve:watch": "parallelshell \"npm run watch\" \"http-server . -p 7000\" \"open http://localhost:7000\"",
     "build": "sass --style expanded ./styles/main.scss:./dist/main.css",
