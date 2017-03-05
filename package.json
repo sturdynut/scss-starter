@@ -1,6 +1,6 @@
 {
   "name": "scss-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A starter for setting up SCSS.",
   "main": "index.js",
   "scripts": {
